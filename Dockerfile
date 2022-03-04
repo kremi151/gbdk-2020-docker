@@ -16,3 +16,5 @@ RUN apt update \
 	&& apt autoremove -y \
 	&& rm -rf /opt/gbdk-2020 \
 	&& rm -rf /var/lib/apt/lists/*
+
+ENV PATH="/opt/gbdk/bin:$PATH"
